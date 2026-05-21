@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Se protéger – CyberAware</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <img src="img/cyberl.png" alt="Logo CyberAware" class="logo">
+  <h1>CyberAware</h1>
+  <p class="slogan">Naviguez en sécurité. Restez CyberAware.</p>
+  <nav>
+    <ul>
+      <li><a href="site.html">Accueil</a></li>
+      <li><a href="menaces.html">Menaces</a></li>
+      <li><a href="protection.html">Se protéger</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="section-hero">
+    <h2>Comment se protéger ?</h2>
+    <p>
+      La cybersécurité commence par des <strong>gestes simples du quotidien</strong>.
+      Retrouvez ici les bonnes pratiques essentielles pour chaque type de menace,
+      ainsi que les réflexes de base valables pour tous.
+    </p>
+    <div class="cta-row">
+      <a href="menaces.html" class="btn btn-ghost">← Voir les menaces</a>
+      <a href="quiz.html" class="btn btn-secondary">Tester mes connaissances</a>
+    </div>
+  </section>
+
+  <!-- RÉFLEXES DE BASE -->
+  <section class="card">
+    <h3>🛡️ Les réflexes de base (toutes menaces confondues)</h3>
+    <div class="tips-grid">
+      <div class="tip">
+        <h4>Mots de passe uniques</h4>
+        <p>Un mot de passe différent par site, géré avec un gestionnaire (Bitwarden, KeePass…).</p>
+      </div>
+      <div class="tip">
+        <h4>Double authentification (2FA)</h4>
+        <p>Activez-la sur tous vos comptes importants : messagerie, banque, réseaux sociaux.</p>
+      </div>
+      <div class="tip">
+        <h4>Mises à jour régulières</h4>
+        <p>OS, navigateur, applications : chaque mise à jour corrige des failles de sécurité.</p>
+      </div>
+      <div class="tip">
+        <h4>Sauvegardes fréquentes</h4>
+        <p>Sauvegardez vos données importantes sur un support externe ou cloud chiffré.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHISHING -->
+  <section class="card" id="phishing">
+    <h3>🎣 Se protéger du Phishing</h3>
+    <p style="margin-bottom:16px;">
+      Le phishing cherche à vous tromper via de faux messages. La vigilance est votre meilleure arme.
+    </p>
+    <div class="tips-grid">
+      <div class="tip">
+        <h4>Vérifier l'expéditeur</h4>
+        <p>Regardez l'adresse e-mail complète, pas seulement le nom affiché. Un domaine suspect suffit à identifier la fraude.</p>
+      </div>
+      <div class="tip">
+        <h4>Ne jamais cliquer sans vérifier</h4>
+        <p>Passez la souris sur un lien pour voir l'URL réelle avant de cliquer. En cas de doute, passez par le site officiel directement.</p>
+      </div>
+      <div class="tip">
+        <h4>Méfiance face à l'urgence</h4>
+        <p>« Votre compte sera bloqué » est une manipulation. Aucun organisme sérieux ne vous force à agir immédiatement par e-mail.</p>
+      </div>
+      <div class="tip">
+        <h4>Signaler les messages suspects</h4>
+        <p>E-mail → <strong>signal-spam.fr</strong> · SMS → transférer au <strong>33700</strong> · Site frauduleux → Phishing Initiative.</p>
+      </div>
+    </div>
+    <div class="cta-row" style="margin-top:16px;">
+      <a href="phishing.html" class="btn btn-ghost">En savoir plus sur le phishing →</a>
+    </div>
+  </section>
+
+  <!-- MALWARE -->
+  <section class="card" id="malware">
+    <h3>🦠 Se protéger des Malwares</h3>
+    <p style="margin-bottom:16px;">
+      Les logiciels malveillants s'introduisent souvent par des téléchargements ou des failles non corrigées.
+    </p>
+    <div class="tips-grid">
+      <div class="tip">
+        <h4>Antivirus à jour</h4>
+        <p>Installez un antivirus fiable et maintenez-le à jour. Il détecte et bloque la majorité des menaces connues.</p>
+      </div>
+      <div class="tip">
+        <h4>Téléchargements officiels uniquement</h4>
+        <p>Téléchargez vos logiciels depuis les sites officiels ou les stores officiels (App Store, Google Play, Microsoft Store).</p>
+      </div>
+      <div class="tip">
+        <h4>Prudence avec les pièces jointes</h4>
+        <p>N'ouvrez jamais une pièce jointe inattendue, même si l'expéditeur vous semble connu.</p>
+      </div>
+      <div class="tip">
+        <h4>Éviter les clés USB inconnues</h4>
+        <p>Une clé USB trouvée ou reçue de source inconnue peut contenir un malware qui s'exécute automatiquement.</p>
+      </div>
+    </div>
+
+    <h4 style="color:#0f1c3f; margin: 20px 0 10px;">En cas d'infection</h4>
+    <ol class="steps">
+      <li><strong>Déconnectez</strong> l'appareil d'Internet immédiatement.</li>
+      <li><strong>Lancez</strong> une analyse antivirus complète.</li>
+      <li><strong>Ne payez pas</strong> de rançon en cas de ransomware.</li>
+      <li><strong>Changez</strong> tous vos mots de passe depuis un autre appareil sain.</li>
+      <li><strong>Faites appel</strong> à un professionnel si vous ne pouvez pas nettoyer seul.</li>
+    </ol>
+    <div class="cta-row" style="margin-top:16px;">
+      <a href="malware.html" class="btn btn-ghost">En savoir plus sur les malwares →</a>
+    </div>
+  </section>
+
+  <!-- FUITE DE DONNÉES -->
+  <section class="card" id="fuite">
+    <h3>🔓 Se protéger des fuites de données</h3>
+    <p style="margin-bottom:16px;">
+      Vous ne pouvez pas toujours empêcher une fuite côté serveur, mais vous pouvez en limiter l'impact.
+    </p>
+    <div class="tips-grid">
+      <div class="tip">
+        <h4>Mot de passe unique par site</h4>
+        <p>Si un site est piraté, seul ce compte est compromis. Un gestionnaire de mots de passe rend ça simple.</p>
+      </div>
+      <div class="tip">
+        <h4>Activer le 2FA</h4>
+        <p>Même si votre mot de passe fuite, le 2FA empêche un attaquant d'accéder à votre compte.</p>
+      </div>
+      <div class="tip">
+        <h4>Surveiller ses comptes</h4>
+        <p>Vérifiez régulièrement vos relevés bancaires et alertes de connexion. Réagissez vite en cas d'anomalie.</p>
+      </div>
+      <div class="tip">
+        <h4>Vérifier si vos données ont fuité</h4>
+        <p>Utilisez <strong>haveibeenpwned.com</strong> pour savoir si votre e-mail apparaît dans des bases de données volées.</p>
+      </div>
+    </div>
+
+    <h4 style="color:#0f1c3f; margin: 20px 0 10px;">Si vous êtes concerné par une fuite</h4>
+    <ol class="steps">
+      <li><strong>Changez le mot de passe</strong> du compte touché et de tout compte utilisant le même.</li>
+      <li><strong>Activez le 2FA</strong> si ce n'est pas encore fait.</li>
+      <li><strong>Surveillez</strong> vos e-mails, connexions et transactions bancaires.</li>
+      <li><strong>Méfiez-vous</strong> des messages "de sécurité" qui suivent : ils peuvent être du phishing ciblé.</li>
+    </ol>
+    <div class="cta-row" style="margin-top:16px;">
+      <a href="fuite.html" class="btn btn-ghost">En savoir plus sur les fuites de données →</a>
+    </div>
+  </section>
+
+  <!-- DDOS -->
+  <section class="card" id="ddos">
+    <h3>💥 Se protéger des attaques DDoS</h3>
+    <p style="margin-bottom:16px;">
+      Les attaques DDoS ciblent surtout les services en ligne, mais les particuliers peuvent aussi être visés.
+    </p>
+    <div class="tips-grid">
+      <div class="tip">
+        <h4>Service anti-DDoS</h4>
+        <p>Pour un site ou serveur : activez Cloudflare, OVH anti-DDoS ou Akamai. Cloudflare propose une offre gratuite pour les petits sites.</p>
+      </div>
+      <div class="tip">
+        <h4>Pare-feu applicatif (WAF)</h4>
+        <p>Configurez un WAF pour filtrer automatiquement les requêtes anormales avant qu'elles atteignent votre serveur.</p>
+      </div>
+      <div class="tip">
+        <h4>CDN & Rate limiting</h4>
+        <p>Un CDN distribue le trafic et absorbe les pics. Le rate limiting bloque les sources qui envoient trop de requêtes.</p>
+      </div>
+      <div class="tip">
+        <h4>Masquer son IP (particuliers)</h4>
+        <p>Si vous streamez ou jouez en ligne, cachez votre IP réelle derrière un VPN pour éviter d'être ciblé directement.</p>
+      </div>
+    </div>
+
+    <section class="alert alert-warning" style="margin-top:20px; margin-bottom:0;">
+      <h4 style="margin-bottom:8px;">⚠️ Important : c'est illégal de lancer une attaque</h4>
+      <p>
+        Commander ou participer à une attaque DDoS est un <strong>délit pénal</strong> en France :
+        jusqu'à <strong>5 ans d'emprisonnement</strong> et <strong>150 000 € d'amende</strong>
+        (article 323-2 du Code pénal).
+      </p>
+    </section>
+    <div class="cta-row" style="margin-top:16px;">
+      <a href="ddos.html" class="btn btn-ghost">En savoir plus sur les attaques DDoS →</a>
+    </div>
+  </section>
+
+  <!-- OUTILS RECOMMANDÉS -->
+  <section class="card">
+    <h3>🧰 Outils recommandés</h3>
+    <div class="tips-grid">
+      <div class="tip">
+        <h4>Gestionnaire de mots de passe</h4>
+        <p><strong>Bitwarden</strong> (gratuit, open source) · <strong>KeePass</strong> (local) · <strong>1Password</strong> (payant).</p>
+      </div>
+      <div class="tip">
+        <h4>Vérifier ses fuites</h4>
+        <p><strong>haveibeenpwned.com</strong> — entrez votre e-mail pour savoir si vos données ont été exposées.</p>
+      </div>
+      <div class="tip">
+        <h4>Antivirus</h4>
+        <p><strong>Malwarebytes</strong> (gratuit) · <strong>Windows Defender</strong> (intégré à Windows) · <strong>Bitdefender</strong>.</p>
+      </div>
+      <div class="tip">
+        <h4>Signalement en France</h4>
+        <p><strong>cybermalveillance.gouv.fr</strong> — assistance et signalement pour toutes les cybermenaces.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section-hero" style="text-align:center;">
+    <h3 style="color:#fff; margin-bottom:10px;">Prêt à tester vos connaissances ?</h3>
+    <p style="opacity:.95; margin-bottom:16px;">
+      Mettez en pratique tout ce que vous venez d'apprendre avec notre quiz interactif.
+    </p>
+    <div class="cta-row" style="justify-content:center;">
+      <a href="quiz.html" class="btn btn-secondary">Faire le quiz →</a>
+      <a href="menaces.html" class="btn btn-ghost">Revoir les menaces</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    &copy; 2025 CyberAware |
+    <a href="Confidentialité.html">Confidentialité</a> |
+    <a href="Mentions légales.html">Mentions légales</a>
+  </p>
+</footer>
+
+</body>
+</html>

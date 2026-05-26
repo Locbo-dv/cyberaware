@@ -1,60 +1,98 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz - CyberAware</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz – CyberAware</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .carte-menace { cursor: pointer; }
+    .iframe-wrapper {
+      position: relative;
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .iframe-wrapper iframe {
+      width: 100%;
+      height: 700px;
+      border: none;
+      display: block;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>CyberAware</h1>
-    <nav>
-        <ul>
-            <li><a href="site.html">Accueil</a></li>
-            <li><a href="menaces.html">Menaces</a></li>
-            <li><a href="protection.html">Se protéger</a></li>
-            <li><a href="quiz.html">Quiz</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <img src="img/cyberl.png" alt="Logo CyberAware" class="logo">
+  <h1>CyberAware</h1>
+  <p class="slogan">Naviguez en sécurité. Restez CyberAware.</p>
+  <nav>
+    <ul>
+      <li><a href="site.html">Accueil</a></li>
+      <li><a href="menaces.html">Menaces</a></li>
+      <li><a href="protection.html">Se protéger</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
 <main>
-   <section class="cartes-menaces"> 
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLScfBncm4Yvx4akLb5GOyICJad1qmLFeebmUa3QA8Kg1WNPshQ/viewform?embedded=true" class="carte-menace">
-        <img src="img/quiz-debutant.png" width=100 height="" >
-        <h3>Quiz Cyber Débutant</h3>
-        <p>Un test simple et rapide pour découvrir les fondamentaux sans aucune difficulté.</p>
-      </a>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_L-tRyc7SPksHxQhY1IirL_an_VaCvucWNft6ZdfgCn2p8w/viewform?usp=dialog" class="carte-menace">
-        <img src="img/malware.png" alt="Icône malware">
-        <h3>Quiz Cyber Intermédiaire</h3>
-        <p>Virus, trojans et ransomwares qui infectent votre appareil.</p>
-      </a>
-      <a href="motsdepasse.html" class="carte-menace">
-        <img src="img/password.png" alt="Icône mot de passe">
-        <h3>Vol de mots de passe</h3>
-        <p>Techniques de piratage ou de fuite d’identifiants sensibles.</p>
-      </a>
-    </section>
-   
-   
+
+  <!-- HERO -->
+  <section class="section-hero">
     <h2>Quiz Cybersécurité</h2>
-    <p>Bientôt un quiz interactif pour tester vos connaissances !</p>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScfBncm4Yvx4akLb5GOyICJad1qmLFeebmUa3QA8Kg1WNPshQ/viewform?embedded=true" width="640" height="6000" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+    <p>Testez vos connaissances avec nos quiz adaptés à tous les niveaux. Débutant, intermédiaire ou expérimenté — à vous de choisir !</p>
+    <div class="cta-row">
+      <a href="menaces.html" class="btn btn-ghost">← Retour aux menaces</a>
+      <a href="protection.html" class="btn btn-secondary">Se protéger</a>
+    </div>
+  </section>
 
+  <!-- CARTES QUIZ -->
+  <section class="card">
+    <h3>Choisissez votre niveau</h3>
+    <div class="cartes-menaces" style="margin-top:20px;">
 
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScfBncm4Yvx4akLb5GOyICJad1qmLFeebmUa3QA8Kg1WNPshQ/viewform" target="_blank" class="carte-menace">
+        <img src="img/quiz-debutant.png" alt="Quiz débutant">
+        <h3>Débutant</h3>
+        <p>Les fondamentaux de la cybersécurité, sans difficulté. Idéal pour commencer.</p>
+      </a>
 
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_L-tRyc7SPksHxQhY1IirL_an_VaCvucWNft6ZdfgCn2p8w/viewform" target="_blank" class="carte-menace">
+        <img src="img/malware.png" alt="Quiz intermédiaire">
+        <h3>Intermédiaire</h3>
+        <p>Virus, phishing, mots de passe… un cran au-dessus pour les plus aguerris.</p>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5NNEMCG31dSXpj6MbYcyApEnRuBUuStpLnFBLShAyrsfLbw/viewform" target="_blank" class="carte-menace">
+        <img src="img/password.png" alt="Quiz expérimenté">
+        <h3>Expérimenté</h3>
+        <p>Pour les vrais passionnés de cybersécurité. Êtes-vous prêt à relever le défi ?</p>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- IFRAME QUIZ EXPÉRIMENTÉ -->
+  <section class="card">
+    <h3>Quiz Expérimenté — directement ici</h3>
+    <p style="margin-bottom:16px;">Passez le quiz expérimenté sans quitter le site :</p>
+    <div class="iframe-wrapper">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe5NNEMCG31dSXpj6MbYcyApEnRuBUuStpLnFBLShAyrsfLbw/viewform?embedded=true" scrolling="yes">Chargement du quiz…</iframe>
+    </div>
+  </section>
 
 </main>
 
-
 <footer>
+  <p>&copy; 2025 CyberAware | Site éducatif sur la cybersécurité</p>
   <p>
-    &copy; 2025 CyberAware | Site éducatif sur la cybersécurité |
-    <a href="confidentialite.html">Confidentialité</a>
+    <a href="Mentions légales.html" style="color:#aac4e0;">Mentions légales</a> |
+    <a href="Confidentialité.html" style="color:#aac4e0;">Confidentialité</a> |
+    <a href="contact.html" style="color:#aac4e0;">Contact</a>
   </p>
 </footer>
 
